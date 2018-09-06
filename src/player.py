@@ -543,7 +543,7 @@ def main():
     level = logging.DEBUG if args.verbose else logging.INFO
     logFormatter = logging.Formatter("%(asctime)s [%(name)-4.4s] [%(levelname)-4.5s] %(message)s")
     rootLogger = logging.getLogger()
-    fileHandler = logging.FileHandler("hearts_logs.log")
+    fileHandler = logging.FileHandler("../log/hearts_logs.log")
     fileHandler.setFormatter(logFormatter)
     rootLogger.addHandler(fileHandler)
     consoleHandler = logging.StreamHandler()
